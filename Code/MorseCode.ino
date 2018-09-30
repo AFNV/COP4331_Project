@@ -1,3 +1,4 @@
+//Variables
 int SensorPin = A0; // select the input pin for ldr
 int SensorValue = 0; // variable to store the value coming from the sensor
 int d, s; // dot/dash (d) ; spaces (s)
