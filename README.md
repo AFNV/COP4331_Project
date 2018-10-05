@@ -1,8 +1,8 @@
 # Team Members
--
--
--
--
+- Andre Villaran
+- Felix Henriquez
+- Neysha Irizarry-Cardoza
+- Viviana Gonzalez Pascual
 
 # Vision
 This Project is brought to you by the combined efforts of Andres, Felix, Neysha, and Vivianna.
