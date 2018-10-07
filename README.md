@@ -20,7 +20,7 @@ The purpose of this project is to create a device that can communicate using lig
 
 - [Code](https://github.com/AFNV/COP4331_Project/tree/master/Code/Sprint%20-1)
 
-- [Test](https://github.com/AFNV/COP4331_Project/tree/master/Test)
+- [Test](https://github.com/AFNV/COP4331_Project/tree/master/Test/Sprint-1)
 
 # Sprint 2
 - [Vision Statement](https://github.com/AFNV/COP4331_Project/blob/master/vision.md)
