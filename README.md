@@ -18,7 +18,7 @@ The purpose of this project is to create a device that can communicate using lig
 
 - [Design Documents](https://docs.google.com/spreadsheets/d/1jqjou5DTnLkL2ovpxtRFCv5KCFpTWw_sCjfMsjTmIUs/edit#gid=2124383652)
 
-- [Code](https://github.com/AFNV/COP4331_Project/tree/master/Code)
+- [Code](https://github.com/AFNV/COP4331_Project/tree/master/Code/Sprint%20-1)
 
 - [Test](https://github.com/AFNV/COP4331_Project/tree/master/Test)
 

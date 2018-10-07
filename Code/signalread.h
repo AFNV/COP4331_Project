@@ -56,8 +56,7 @@ void SignalRead::readLight()
     }
   }
 
-  if(getDefinition(d,s)=="_"){}
-  else
+  if(getDefinition(d,s) != '_')
     Serial.print(getDefinition(d,s));
   s=d=0;
   delay(200);
