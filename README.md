@@ -37,7 +37,7 @@ The purpose of this project is to create a device that can communicate using lig
 
 - Tests
   - [Procedure](https://docs.google.com/document/d/12JFPI0X56VHm48GnXNuzx12jOp92NaGK133eaXe1FVM/edit)
-  - [Test Code](https://github.com/AFNV/COP4331_Project/tree/master/Test)
+  - [Test Code](https://github.com/AFNV/COP4331_Project/tree/master/Test/Sprint-2)
  
 - [Demonstration](https://github.com/AFNV/COP4331_Project/wiki/Demonstration)
 
