@@ -10,8 +10,12 @@ class SignalRead
     {
        SensorPin = A0;
        SensorValue =0;
+       d = 0;
+       s = 0;
     }
-    
+
+    ~SignalRead(){}
+
     void readLight();
     char getDefinition(int d, int s);
     
@@ -52,7 +56,9 @@ void SignalRead::readLight()
     }
   }
 
-  Serial.print(getDefinition(d,s));
+  if(getDefinition(d,s)=="_"){}
+  else
+    Serial.print(getDefinition(d,s));
   s=d=0;
   delay(200);
 }
@@ -64,25 +70,26 @@ void SignalRead::readLight()
 
 char SignalRead::getDefinition(int d, int s)
 {
-  if(d==4 && s==10)
-    return "a";
-  if(d==6 && s==8)
-    return "b";
-  if(d==8 && s==6)
-    return "c";
-  if(d==5 && s==9)
-    return "d";
-  if(d==1 && s==13)
-    return "e";
-  if(d==2 && s==12)
-    return "i";
-  if(d==10 && s==4)
-    return "j";
-  if(d==7 && s==7)
-    return "g";
-  if(d==9 && s==5)
-    return "o";
-  if(d==3 && s==11)
-    return "s";
+  if (d == 4 && s == 10)
+    return 'a';
+  if (d == 6 && s == 8)
+    return 'b';
+  if (d == 8 && s == 6)
+    return 'c';
+  if (d == 5 && s == 9)
+    return 'd';
+  if (d == 1 && s == 13)
+    return 'e';
+  if (d == 2 && s == 12)
+    return 'i';
+  if (d == 10 && s == 4)
+    return 'j';
+  if (d == 7 && s == 7)
+    return 'g';
+  if (d == 9 && s == 5)
+    return 'o';
+  if (d == 3 && s == 11)
+    return 's';
 
+  return '_';
 }
