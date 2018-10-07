@@ -1,11 +1,11 @@
 //Libraries
-#include "Read.h"
+#include "includes.h"
 
 //Variables
 const int buttonPin1 = 2; // button Read 
 const int z =0;
 int buttonR = 0; //initial value of Read button
-Read r;
+SignalRead r;
 
 
 void setup() {
