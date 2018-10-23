@@ -60,7 +60,7 @@ The purpose of this project is to create a device that can communicate using lig
 
 - Test
 
-  - [Procedure]
+  - [Procedure](https://docs.google.com/document/d/12JFPI0X56VHm48GnXNuzx12jOp92NaGK133eaXe1FVM/edit)
   
   - [Test Case]
   
