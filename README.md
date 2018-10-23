@@ -56,7 +56,7 @@ The purpose of this project is to create a device that can communicate using lig
    - [Class Diagram](https://docs.google.com/spreadsheets/d/1N7GhPwzxhxmO_P2HdeuOOalDkBdWCCcB1rn1vteOzdo/edit#gid=0)
    - [Instruction Manual]
   
-- Code
+- [Code](https://github.com/AFNV/COP4331_Project/tree/master/Code/Sprint-3)
 
 - Test
 
