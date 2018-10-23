@@ -43,18 +43,24 @@ The purpose of this project is to create a device that can communicate using lig
 
 
 # Sprint 3
--[Vision Statement](https://github.com/AFNV/COP4331_Project/blob/master/vision.md)
+- [Vision Statement](https://github.com/AFNV/COP4331_Project/blob/master/vision.md)
 
--[Product Backlog | Sprint Backlog | Burndown Chart](https://docs.google.com/spreadsheets/d/1rET_vsWB_XbuD6r-JmnVLcRb3BhbFYk5NgHHhY_IkeU/edit#gid=1087058270) 
+- [Product Backlog | Sprint Backlog | Burndown Chart](https://docs.google.com/spreadsheets/d/1rET_vsWB_XbuD6r-JmnVLcRb3BhbFYk5NgHHhY_IkeU/edit#gid=1087058270) 
 
--[Requirements](https://docs.google.com/document/d/1d1eRc3umv0dQpaeRFLneyFcwU1GA1uHKlhB9DUtvCfU/edit)
+- [Requirements](https://docs.google.com/document/d/1d1eRc3umv0dQpaeRFLneyFcwU1GA1uHKlhB9DUtvCfU/edit)
 
--[Deisgn Documents]
-  -[UML Diagram](https://docs.google.com/spreadsheets/d/1jqjou5DTnLkL2ovpxtRFCv5KCFpTWw_sCjfMsjTmIUs/edit#gid=2124383652)
-  -[Architecture Diagram](https://docs.google.com/document/d/1UvaJfysLh9DkM5mq2Qo5PTwbtwxUb1P9OdAmUzUTuzE/edit)
-  -[Class Diagram](https://docs.google.com/spreadsheets/d/1N7GhPwzxhxmO_P2HdeuOOalDkBdWCCcB1rn1vteOzdo/edit#gid=0)
--[Code]
--[Test]
-  -[Procedure]
-  -[TEst Case]
--[Demonstartion](https://github.com/AFNV/COP4331_Project/wiki/Demonstration)
+- Deisgn Documents
+
+   - [UML Diagram](https://docs.google.com/spreadsheets/d/1jqjou5DTnLkL2ovpxtRFCv5KCFpTWw_sCjfMsjTmIUs/edit#gid=2124383652)
+   - [Architecture Diagram](https://docs.google.com/document/d/1UvaJfysLh9DkM5mq2Qo5PTwbtwxUb1P9OdAmUzUTuzE/edit)
+   - [Class Diagram](https://docs.google.com/spreadsheets/d/1N7GhPwzxhxmO_P2HdeuOOalDkBdWCCcB1rn1vteOzdo/edit#gid=0)
+  
+- Code
+
+- Test
+
+  - [Procedure]
+  
+  - [Test Case]
+  
+- [Demonstartion](https://github.com/AFNV/COP4331_Project/wiki/Demonstration)
