@@ -55,7 +55,7 @@ class SignalRead
     ~SignalRead(){}
 
     void readLight();
-    char getDefinition(int d, int s);
+    char getDefinition(char s[]);
     bool strcomp(char a[], char b[]);
 
   private:
@@ -113,7 +113,7 @@ bool SignalRead::strcomp(char a[], char b[])
 
 
 
-char SignalRead::getDefinition(int d, int s)
+char SignalRead::getDefinition(char [s])
 {
   if(strcomp(s,A))
     return 'A';
