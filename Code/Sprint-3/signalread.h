@@ -95,7 +95,7 @@ void SignalRead::readLight()
   }
 
   if(getDefinition(inputString) != '_')
-    Serial.print(getDefinition(d,s));
+    Serial.print(getDefinition(inputString));
   for(int i=0; i<=13; i++)
          inputString[i]=0;
   delay(200);
@@ -113,7 +113,7 @@ bool SignalRead::strcomp(char a[], char b[])
 
 
 
-char SignalRead::getDefinition(char [s])
+char SignalRead::getDefinition(char s[])
 {
   if(strcomp(s,A))
     return 'A';
