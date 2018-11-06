@@ -32,7 +32,7 @@ void loop() {
     if(buttonR == HIGH)
     {
      r.readLight();
-     lcd.print(r.getInputString());
+     lcd.print(r.getChar());
     }
     else
     {
