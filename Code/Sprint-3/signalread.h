@@ -53,7 +53,11 @@ class SignalRead
     }
 
     ~SignalRead(){}
-
+    
+    char* getInputString()
+    {
+      return inputString;
+    }
     void readLight();
     char getDefinition(char s[]);
     bool strcomp(char a[], char b[]);
