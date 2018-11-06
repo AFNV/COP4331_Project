@@ -100,8 +100,10 @@ void SignalRead::readLight()
     
     }
   }
-
-  if(inputChar = getDefinition(inputString) != '_')
+  
+  inputChar = getDefinition(inputString);
+  
+  if( inputChar != '_')
     Serial.print(inputChar);
   for(int i=0; i<=13; i++)
          inputString[i]=0;
