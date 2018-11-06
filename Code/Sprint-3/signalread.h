@@ -1,4 +1,4 @@
-
+#include <string>
 /*
 Code for the Phototransister: Captures lights and turns it into Letters
 */
@@ -53,7 +53,12 @@ class SignalRead
     }
 
     ~SignalRead(){}
-
+    
+    string getInputString()
+    {
+      return inputString;
+    }
+    
     void readLight();
     char getDefinition(char s[]);
     bool strcomp(char a[], char b[]);
