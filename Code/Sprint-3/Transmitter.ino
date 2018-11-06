@@ -17,6 +17,7 @@ void setup() {
     pinMode(buttonPin1,INPUT);
     // pinMode(buttonPin2, INPUT);
     
+    r = new SignalRead();
     lcd.begin(16, 2);
     Serial.begin(9600); //sets serial port for communication
 }
