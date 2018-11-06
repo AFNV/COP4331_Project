@@ -25,7 +25,7 @@ void loop() {
     buttonR = digitalRead(buttonPin1);
     if(buttonR == HIGH){
      r.readLight();
-     lcd.print(r.getDefinition(r.inputString));
+     lcd.print(r.getInputString());
     }else{
      return z;
     }
