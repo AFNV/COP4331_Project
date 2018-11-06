@@ -50,13 +50,14 @@ class SignalRead
        SensorValue =0;
        for(int i=0; i<=13; i++)
          inputString[i]=0;
+       inputChar ='_';
     }
 
     ~SignalRead(){}
     
-    string getInputString()
+    string getChar()
     {
-      return inputString;
+      return inputChar;
     }
     
     void readLight();
@@ -64,6 +65,7 @@ class SignalRead
     bool strcomp(char a[], char b[]);
 
   private:
+    char inputChar;
     int SensorPin; 
     char inputString[14];
     int SensorValue;
@@ -99,8 +101,8 @@ void SignalRead::readLight()
     }
   }
 
-  if(getDefinition(inputString) != '_')
-    Serial.print(getDefinition(inputString));
+  if(inputChar = getDefinition(inputString) != '_')
+    Serial.print(inputChar);
   for(int i=0; i<=13; i++)
          inputString[i]=0;
   delay(200);
