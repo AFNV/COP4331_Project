@@ -38,7 +38,7 @@ char  Sev[14] = {1,1,0,1,1,0,1,0,1,0,1,0,0,0};
 char  Eig[14] = {1,1,0,1,1,0,1,1,0,1,0,1,0,0};
 char  Nin[14] = {1,1,0,1,1,0,1,1,0,1,1,0,1,0};
 char  Zer[14] = {1,1,0,1,1,0,1,1,0,1,1,0,1,1};
-
+char  nothing[14] = {1,0,1,1,1,1,0,0,0,0,0,0,0,0};
 
 class SignalRead
 {
@@ -80,22 +80,22 @@ void SignalRead::readLight()
   SensorValue = analogRead(SensorPin); 
   //Serial.println(SensorValue);//output value
   
-  if(SensorValue > 15)// calculating the number of dots and dashes
+  if(SensorValue > 100)// calculating the number of dots and dashes
   {
-    
+   delay(20);   
     for(int i=0;i<=13;i++)
     {
       SensorValue=analogRead(SensorPin);
      
-      if(SensorValue > 10) 
+      if(SensorValue > 100) 
       {
-        string[i]=1;//calculating the number of dots and dashes in the character   
-        delay(1000);// one second
+        inputString[i]=1;//calculating the number of dots and dashes in the character   
+        delay(75);
       }
       else
       {
-        string[i]=0; // calculating the number of spaces in dots and dashes
-        delay(1000);//one second ;
+        inputString[i]=0; // calculating the number of spaces in dots and dashes
+        delay(75);
       }
     
     }
@@ -107,7 +107,6 @@ void SignalRead::readLight()
     Serial.print(inputChar);
   for(int i=0; i<=13; i++)
          inputString[i]=0;
-  delay(200);
 }
 
 
@@ -196,6 +195,8 @@ char SignalRead::getDefinition(char s[])
     return '9';
   else if (strcomp(s,Zer))
     return '0';
+  else if (strcomp(s,nothing))
+    return ' ';
   else
     return '_';
 }
