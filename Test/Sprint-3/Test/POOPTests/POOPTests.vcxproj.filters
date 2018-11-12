@@ -24,12 +24,18 @@
     <ClInclude Include="signalread_test.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="signalwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tests.cpp">
+    <ClCompile Include="POOPTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

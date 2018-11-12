@@ -3,6 +3,7 @@
 #include <time.h>       /* time */
 #include "windows.h"
 #include <iostream>
+#include "includes.h"
 /*
 Code for the Phototransister: Captures lights and turns it into Letters
 */
@@ -12,61 +13,71 @@ class SignalRead
 public:
 	SignalRead()
 	{
-		SensorPin = 10;
-		SensorValue = 0;
-		d = 0;
-		s = 0;
-		srand(time(NULL));
+		for (int i = 0; i <= 13; i++)
+			inputString[i] = 0;
+		inputChar = '_';
+		ledBlue = 37;
 	}
 
 	~SignalRead() {}
 
-	void readLight();
-	char getDefinition(int d, int s);
+	char getChar()
+	{
+		return inputChar;
+	}
 
+	void printChar()
+	{
+		inputChar = getDefinition(inputString);
+		std::cout <<inputChar << std::endl;
+	}
+
+	void resetString()
+	{
+		for (int i = 0; i <= 13; i++)
+			inputString[i] = 0;
+	}
+
+	void readLight(unsigned long value, int index);
+
+	char getDefinition(char s[]);
+
+	bool strcomp(char a[], char b[]);
 
 private:
-	int SensorPin;
-	int d, s; // dot/dash (d) ; spaces (s)
-	int SensorValue;
+	char inputChar;
+	char inputString[14];
+	uint8_t ledBlue;
 };
 
 
 
 
-void SignalRead::readLight()
+void SignalRead::readLight(unsigned long value, int index)
 {
 
-	SensorValue = rand() % 30 + 1;
-	//Serial.println(SensorValue);//output value
-
-	if (SensorValue > 15)// calculating the number of dots and dashes
+	if (value > 4300)
 	{
-
-		for (int i = 0; i <= 13; i++)
-		{
-			SensorValue = rand() % 20 + 1;
-
-			if (SensorValue > 10)
-			{
-				d++;//calculating the number of dots and dashes in the character   
-				Sleep(200);// one second
-			}
-			else
-			{
-				s++; // calculating the number of spaces in dots and dashes
-				Sleep(200);//one second ;
-			}
-
-		}
+		inputString[index] = 1;//calculating the number of dots and dashes in the character   
+		//digitalWrite(ledBlue, HIGH);
+		//delay(1000);// one second
+	}
+	else
+	{
+		inputString[index] = 0; // calculating the number of spaces in dots and dashes
+		//digitalWrite(ledBlue, LOW);
+		//delay(1000);//one second ;
 	}
 
-	if (getDefinition(d, s) == '_')
-		std::cout << "Invalid" << std::endl;
-	else
-		std::cout << getDefinition(d, s) << std::endl;
-	s = d = 0;
-	Sleep(50);
+}
+
+bool SignalRead::strcomp(char a[], char b[])
+{
+	for (int i = 0; i<14; i++)
+		if (a[i] != b[i])
+			return false;
+
+	return true;
 }
 
 
@@ -74,28 +85,82 @@ void SignalRead::readLight()
 
 
 
-char SignalRead::getDefinition(int d, int s)
+char SignalRead::getDefinition(char s[])
 {
-	if (d == 4 && s == 10)
-		return 'a';
-	if (d == 6 && s == 8)
-		return 'b';
-	if (d == 8 && s == 6)
-		return 'c';
-	if (d == 5 && s == 9)
-		return 'd';
-	if (d == 1 && s == 13)
-		return 'e';
-	if (d == 2 && s == 12)
-		return 'i';
-	if (d == 10 && s == 4)
-		return 'j';
-	if (d == 7 && s == 7)
-		return 'g';
-	if (d == 9 && s == 5)
-		return 'o';
-	if (d == 3 && s == 11)
-		return 's';
-
-	return '_';
+	if (strcomp(s, A))
+		return 'A';
+	else if (strcomp(s, B))
+		return 'B';
+	else if (strcomp(s, Cee))
+		return 'C';
+	else if (strcomp(s, D))
+		return 'D';
+	else if (strcomp(s, E))
+		return 'E';
+	else if (strcomp(s, F))
+		return 'F';
+	else if (strcomp(s, G))
+		return 'G';
+	else if (strcomp(s, H))
+		return 'H';
+	else if (strcomp(s, I))
+		return 'I';
+	else if (strcomp(s, J))
+		return 'J';
+	else if (strcomp(s, K))
+		return 'K';
+	else if (strcomp(s, L))
+		return 'L';
+	else if (strcomp(s, M))
+		return 'M';
+	else if (strcomp(s, eN))
+		return 'N';
+	else if (strcomp(s, O))
+		return 'O';
+	else if (strcomp(s, P))
+		return 'P';
+	else if (strcomp(s, Q))
+		return 'Q';
+	else if (strcomp(s, R))
+		return 'R';
+	else if (strcomp(s, S))
+		return 'S';
+	else if (strcomp(s, T))
+		return 'T';
+	else if (strcomp(s, U))
+		return 'U';
+	else if (strcomp(s, Vee))
+		return 'V';
+	else if (strcomp(s, W))
+		return 'W';
+	else if (strcomp(s, X))
+		return 'X';
+	else if (strcomp(s, Y))
+		return 'Y';
+	else if (strcomp(s, Zee))
+		return 'Z';
+	else if (strcomp(s, One))
+		return '1';
+	else if (strcomp(s, Two))
+		return '2';
+	else if (strcomp(s, Thr))
+		return '3';
+	else if (strcomp(s, Fou))
+		return '4';
+	else if (strcomp(s, Fiv))
+		return '5';
+	else if (strcomp(s, Six))
+		return '6';
+	else if (strcomp(s, Sev))
+		return '7';
+	else if (strcomp(s, Eig))
+		return '8';
+	else if (strcomp(s, Nin))
+		return '9';
+	else if (strcomp(s, Zer))
+		return '0';
+	else if (strcomp(s, nothing))
+		return ' ';
+	else
+		return '_';
 }

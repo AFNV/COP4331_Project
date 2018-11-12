@@ -1,5 +1,3 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (POOPTests.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  stdafx.cpp
-  Tests.cpp
-c:\users\fxrev\onedrive\documents\arduino\cop3330_project\pooptests\pooptests\signalread_test.h(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  POOPTests.vcxproj -> C:\Users\fxrev\OneDrive\Documents\Arduino\COP3330_Project\POOPTests\Debug\Tests.exe
+﻿  POOPTests.cpp
+c:\users\fxrev\source\repos\pooptests\pooptests\test.h(75): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  POOPTests.vcxproj -> C:\Users\fxrev\source\repos\POOPTests\Debug\POOPTests.exe
