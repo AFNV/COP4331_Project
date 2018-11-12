@@ -25,7 +25,7 @@ unsigned long reading;
 
 int buttonOneState = 0; 
 
-char text[] = "hello world";
+String text;
 
 
 
@@ -54,38 +54,32 @@ void setup()
 
 void loop()
 {
-  buttonOneState = digitalRead(button);
-  if(buttonOneState == LOW)
-  {
+  Serial.println("\nPlease enter message: ");
+  
+  while (Serial.available() == 0) {}
+  
+  text = Serial.readString();
+  
+  char *cstr = new char[text.length() + 1];
+  strcpy(cstr, text.c_str());
+  
+  
+  Serial.println("\nPress Button To Send");
  
-  w->codeText(text, sizeof(text));
+  buttonOneState = digitalRead(button);
   
-  /* reading = opt3001.readResult();
-  //Serial.println(SensorValue);//output value
-  if(reading > 4300)// calculating the number of dots and dashes
+  while(buttonOneState == HIGH)
   {
-    digitalWrite(ledBlue, HIGH);
-    delay(200);
-    digitalWrite(ledBlue, LOW);
-    delay(200);
-    
-    for(int i=0;i<=13;i++)
-    {
-      reading=opt3001.readResult();
-     
-      r->readLight(reading, i);
-    
-    }
-    digitalWrite(ledBlue, LOW);
-
-     r->printChar();
-   r->resetString();
-
+    buttonOneState = digitalRead(button);
   }
-     */
   
-  }
+  Serial.println("\nSending Message...");
+  
+  w->codeText(cstr, text.length()-1);
+  
+  Serial.println("\nMessage Sent!");
 
+  delete [] cstr;
 }
 
 
