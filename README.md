@@ -38,7 +38,7 @@ The purpose of this project is to create a device that can communicate using lig
 - Tests
   - [Procedure](https://docs.google.com/document/d/12JFPI0X56VHm48GnXNuzx12jOp92NaGK133eaXe1FVM/edit)
   - [Test Code](https://github.com/AFNV/COP4331_Project/tree/master/Test/Sprint-2)
-  - Matrix
+  - [Matrix](https://docs.google.com/spreadsheets/d/1o-5FCZ0gSSHocWHK13CswNv4JO3sM7ftK2V6D14r0T0/edit#gid=0)
  
 - [Demonstration](https://github.com/AFNV/COP4331_Project/wiki/Demonstration)
 
@@ -60,10 +60,8 @@ The purpose of this project is to create a device that can communicate using lig
 - [Code](https://github.com/AFNV/COP4331_Project/tree/master/Code/Sprint-3)
 
 - Test
-
   - [Procedure](https://docs.google.com/document/d/12JFPI0X56VHm48GnXNuzx12jOp92NaGK133eaXe1FVM/edit)
-  
   - [Test Case](https://github.com/AFNV/COP4331_Project/tree/master/Test/Sprint-3)
-  - Matrix
+  - [Matrix](https://docs.google.com/spreadsheets/d/1o-5FCZ0gSSHocWHK13CswNv4JO3sM7ftK2V6D14r0T0/edit#gid=0)
   
 - [Demonstartion](https://github.com/AFNV/COP4331_Project/wiki/Demonstration)
